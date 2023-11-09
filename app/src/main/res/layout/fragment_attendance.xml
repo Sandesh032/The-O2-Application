@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/appbg"
+    tools:context=".AttendanceFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/aldrich"
+        android:text="Attendance Review"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_maths"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/maths_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Transforms and Boundary Value Problems"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/maths_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/maths_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_maths"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_maths_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/maths_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_maths"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/maths_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_maths_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_maths_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_maths"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_maths"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_maths_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_maths_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_maths"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_maths"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_maths_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_maths_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_maths_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_maths"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_maths_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_maths_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_coa"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/coa_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Computer Organization and Architecture"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_coa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/coa_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_coa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/coa_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_coa"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_coa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/coa_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_coa"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_coa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/coa_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_coa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_coa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_coa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_coa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_coa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_coa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_coa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_coa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_coa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_coa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_coa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_coa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_coa_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_coa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_coa_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_coa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dsa"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dsa_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Data Structures and Algorithms"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_dsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_dsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_dsa"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_dsa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_dsa"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_dsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_dsa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_dsa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_dsa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_dsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_dsa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_dsa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_dsa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_dsa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_dsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_dsa"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_dsa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_dsa_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_dsa_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_dsa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_dsa_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_dsa_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dsa_lab"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dsa_lab_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="DSA Lab"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_dsa_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_lab_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_dsa_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_lab_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_dsa_lab"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_dsa_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_lab_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_dsa_lab"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_dsa_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dsa_lab_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_dsa_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_dsa_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_dsa_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_dsa_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_dsa_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_dsa_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_dsa_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_dsa_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_dsa_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_dsa_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_dsa_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_dsa_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_dsa_lab_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_dsa_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_dsa_lab_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_dsa_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_os"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/os_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Operating Systems"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_os"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_os_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_os"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_os_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_os_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_os"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_os"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_os_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_os_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_os"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_os"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_os_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_os_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_os_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_os"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_os_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_os_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_os_lab"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/os_lab_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="OS Lab"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_os_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_lab_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_os_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_lab_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_os_lab"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_os_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_lab_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_os_lab"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_os_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/os_lab_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_os_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_os_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_os_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_os_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_os_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_os_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_os_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_os_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_os_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_os_lab"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_os_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_os_lab_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_os_lab_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_os_lab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_os_lab_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_os_lab_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_dtm"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/dtm_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Design Thinking and Methodology"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_dtm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dtm_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_dtm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dtm_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_dtm"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_dtm_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dtm_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_dtm"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_dtm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dtm_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_dtm_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_dtm_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_dtm"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_dtm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_dtm"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_dtm_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_dtm_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_dtm"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_dtm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_dtm"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_dtm_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_dtm_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_dtm_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_dtm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_dtm_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_dtm_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_app"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/app_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Advanced Programming Practice"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/app_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/app_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_app"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_app_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/app_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_app"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/app_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_app_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_app_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_app"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_app"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_app_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_app_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_app"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_app"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_app_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_app_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_app_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_app_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_app_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_poe"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/poe_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Professional Ethics"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_poe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/poe_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_poe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/poe_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_poe"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_poe_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/poe_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_poe"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_poe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/poe_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_poe_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_poe_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_poe"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_poe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_poe"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_poe_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_poe_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_poe"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_poe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_poe"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_poe_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_poe_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_poe_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_poe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_poe_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_poe_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_vr"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="8dp"
+                android:elevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/vr_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Verbal Reasoning"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_classes_vr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vr_title"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Classes = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tot_class_vr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vr_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/total_classes_vr"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_vr_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vr_title"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tot_class_vr"
+                        android:fontFamily="@font/acme"
+                        android:text="Total Attended = "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attended_vr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vr_title"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/attended_vr_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_vr_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_vr"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Attendance \t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/attendance_vr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/total_classes_vr"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/attendance_vr_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_vr_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_vr"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Required \t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/required_vr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/attendance_vr"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/required_vr_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_vr_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_vr_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/acme"
+                        android:text="Margin \t\t\t\t= "
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/margin_vr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/required_vr_desc"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/margin_vr_desc"
+                        android:fontFamily="@font/acme"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

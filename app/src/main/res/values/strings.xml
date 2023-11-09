@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">The O2</string>
+
+    <string name="contentDescription">SRM icon</string>
+
+    <string name="email">Enter email address</string>
+    <string name="password">Enter password</string>
+    <string name="login">Login</string>
+    <string name="loginAcademia">Login with your academia credentials</string>
+
+    <string name="studentDetails">Student\'s Details</string>
+    <string name="course">Course:\t\t\tB Tech. Computer Science and Engineering</string>
+    <string name="institute">Institute:\tFaculty of Engineering and\n\t\t\t\t\t\t\t\t\t\t Technology Kattankulathur</string>
+    <string name="program">Program:\t\tB.Tech.-Computer Science and\n\t\t\t\t\t\t\t\t\t\t Engineering</string>
+    <string name="line">\t\t___________________________________________</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_timetable">Time Table</string>
+    <string name="menu_classDetails">Class Details</string>
+    <string name="menu_attendance">Attendance</string>
+    <string name="menu_mailFa">Mail FA</string>
+    <string name="menu_aboutUs">About Us</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

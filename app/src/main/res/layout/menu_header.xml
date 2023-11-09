@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/nav_header_gradient"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/final_app_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:text="Contact Us"
+        android:textColor="@color/banner"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/banner"
+        android:text="contact.istacoat@gmail.com"
+        android:textSize="15sp" />
+
+</LinearLayout>
